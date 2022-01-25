@@ -4,12 +4,12 @@ import TransTable from "../Components/TransTable";
 import "./Home.css";
 
 function Home() {
-  const [transactions, setTransactions] = useState([]);
+  const [transactions, setTrans] = useState([]);
   const URL = process.env.REACT_APP_API_URL + `/transactions`;
 
   useEffect(() => {
     axios.get(URL).then((response) => {
-      setTransactions(response.data);
+      setTrans(response.data);
     });
   }, []);
 
