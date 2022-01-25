@@ -9,6 +9,7 @@ ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
       <App />
+      <script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>
     </React.StrictMode>
   </BrowserRouter>,
   document.getElementById('root')
