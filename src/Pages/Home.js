@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import TransTable from "../Components/TransTable";
-import "/Home.css";
+import "./Home.css";
 
 function Home() {
   const [transactions, setTransactions] = useState([]);
