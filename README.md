@@ -8,4 +8,4 @@ https://github.com/CharlieMoran/budgeting-app-front
 https://budgeting-app-be.herokuapp.com/
 
 ## Deployed Frontend Link
-https://gracious-jones-d4e419.netlify.app/
+https://budgeting-app-front.netlify.app/
