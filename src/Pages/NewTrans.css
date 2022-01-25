@@ -1,0 +1,26 @@
+.newTrans,
+.edittrans {
+  text-align: left;
+  margin: 0 5% 0 7.5%;
+}
+
+form {
+  display: grid;
+  grid-column: 1fr;
+}
+
+form input,
+form select,
+form button {
+  margin: 10px 0 15px;
+  width: 220px;
+  height: 36px;
+  border: 2px solid #8f8787;
+  border-radius: 3px;
+}
+form button {
+  width: 160px;
+  background-color: transparent;
+  color: #574a4a;
+  font-weight: bold;
+}
