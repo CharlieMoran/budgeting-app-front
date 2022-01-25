@@ -6,7 +6,7 @@ import "./Home.css";
 function Home() {
   const [transactions, setTrans] = useState([]);
   const URL = process.env.REACT_APP_API_URL + `/transactions`;
-
+  const cookieSettings = process.env.DB_HOST ? JSON.parse(process.env.DB_HOST) : null;
   useEffect(() => {
     axios.get(URL).then((response)=> {
       setTrans(response.data);
