@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router";
 import { Link } from "react-router-dom";
-import "./TransactionDetails.css";
+import "./TransDetails.css";
 
 function TransDetails() {
   const params = useParams();
