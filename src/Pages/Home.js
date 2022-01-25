@@ -8,12 +8,12 @@ function Home() {
   const URL = process.env.REACT_APP_API_URL + `/transactions`;
 
   useEffect(() => {
-    axios.get(URL).then((response) => {
+    axios.get(URL).then((response)=> {
       setTrans(response.data);
     });
   }, []);
 
-  function accountBalance(transactions) {
+  function balance(transactions) {
     return transactions.reduce((a, b) => {
       return a + Number(b.amount);
     }, 0);
@@ -42,7 +42,7 @@ function Home() {
   return (
     <div className="Home">
       <div className="balance">
-      <h1>Balance: {accountBalance(transactions)}</h1>
+      <h1>Balance: {balance(transactions)}</h1>
       </div>
       <div className="stuff">
       <h3>Earnings: {earnings(transactions)}</h3>
