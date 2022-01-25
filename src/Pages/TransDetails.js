@@ -18,7 +18,7 @@ function TransDetails() {
     axios.delete(URL).then(() => navigate("/"));
   };
   return (
-    <div className="transactionDetails">
+    <div className="transDetails">
       <h2>{transaction.item_name}</h2>
       <h2>From: {transaction.source}</h2>
       <h2>Date: {transaction.date}</h2>
