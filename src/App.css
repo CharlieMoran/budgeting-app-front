@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.transtable {
+  justify-content: center;
+  text-align: center;
+}
+
 .App-logo {
   height: 38vmin;
   pointer-events: none;
