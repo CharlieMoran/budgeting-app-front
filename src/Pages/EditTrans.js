@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import "./NewTrans.css"
 
 function EditTrans() {
   const navigate = useNavigate();
@@ -15,8 +16,7 @@ function EditTrans() {
   
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios
-      .put(URL, transaction)
+    axios.put(URL, transaction)
       .then(() => navigate(`/transactions/${params.id}`));
   };
 
