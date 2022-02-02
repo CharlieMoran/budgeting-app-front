@@ -86,6 +86,7 @@ function NewTrans() {
           </optgroup>
           <optgroup label="Expenses">
             <option value="grocery">Grocery Stores</option>
+            <option value="banana">🍌 Banana 🍌</option>
             <option value="gas">Gas Stations</option>
             <option value="restaurants">Restaurants</option>
             <option value="travel">Travel</option>
