@@ -10,7 +10,7 @@ function Home() {
     axios.get(URL).then((response)=> {
       setTrans(response.data);
     });
-  }, []);
+  }, [URL]);
 
   function balance(transactions) {
     let balance = document.getElementById('balance');
@@ -49,29 +49,14 @@ function Home() {
      
   }
 
-// function color() {
-    // let resultEl = "";
-    // let balance = document.getElementById('balance');
-    // let val = parseInt(balance)
-    // resultEl.innerHTML = val
-    // if (val >= 1000) {
-    //     resultEl.style.color = "green";
-    // } else if (val > 0){
-    //     resultEl.style.color = "grey";
-    // } else {
-    //   resultEl.style.color = "red";
-    // }
-//     return;
-// }
-
   return (
     <div className="Home">
       <div className="balance">
-      <h1 id="balance">Balance: {balance(transactions)}</h1>
+      <h1 id="balance">Balance: ${balance(transactions).toFixed(2)}</h1>
       </div>
       <div className="stuff">
-      <h3>Earnings: {earnings(transactions)}</h3>
-      <h3>Expenses: {Math.abs(expenses(transactions))}</h3>
+      <h3>Earnings: ${earnings(transactions).toFixed(2)}</h3>
+      <h3>Expenses: ${Math.abs(expenses(transactions)).toFixed(2)}</h3>
       </div>
       <TransTable transactions={transactions} />
     </div>

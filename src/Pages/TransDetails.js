@@ -14,7 +14,8 @@ function TransDetails() {
     axios.get(URL).then((response) => {
       setTrans(response.data);
     });
-  }, []);
+  }, [URL]);
+
   const handleDelete = () => {
     axios.delete(URL).then(() => navigate("/"));
   };

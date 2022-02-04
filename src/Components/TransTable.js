@@ -9,20 +9,27 @@ class TransTable extends Component {
     return (
       <div className="transTable">
         <table>
+          <thead>
+          <tr>
           <th>Date</th>
           <th>Source</th>
           <th>Amount</th>
+          </tr>
+          </thead>
+          <tbody>
           {this.props.transactions.map((item, index)=> {
             return (
-              <tr>
+              <tr key={index}>
                 <td>{item.date}</td>
-                <Link to={`/transactions/${index}`}>
-                  <td>{item.source}</td>
+                <td><Link to={`/transactions/${index}`}>
+                  {item.source}
                 </Link>
+                </td>
                 <td>{item.amount}</td>
               </tr>
             );
           })}
+          </tbody>
         </table>
       </div>
     );
