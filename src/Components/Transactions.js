@@ -6,12 +6,14 @@ import "../Pages/Home.css";
 
 function Transactions() {
   const [transactions, setTrans] = useState([]);
+  console.log(transactions)
   const URL = process.env.REACT_APP_API_URL + `/transactions`;
   useEffect(() => {
     axios.get(URL).then((response)=> {
       setTrans(response.data);
     });
   }, [URL]);
+
 
   function balance(transactions) {
     let balance = document.getElementById("balance");
@@ -53,14 +55,14 @@ function Transactions() {
 //   function BananaVideo(transactions) {
 //     console.log(transactions)
 //       let x = (Math.floor(Math.random() * 2))
-//       for(let i = 0; i > transactions.length; i++){
-//       if (transactions[i].source === "banana" ){
-//         console.log(transactions[i].source)
+//       for(let i = 0; i > this.state.transactions.length; i++){
+//       if (this.state.transactions[i].source === "banana" ){
+//         console.log(this.state.transactions[i].source)
 //        return <video className='banana' autoPlay loop>
 //        <source src={Banana} type='video/mp4' />
 //       </video> ;
 //       } 
-//       else if (transactions[i] === "banana" ){
+//       else if (this.state.transactions[i] === "banana" ){
 //         return <video className='banana' autoPlay loop>
 //         <source src={Banana2} type='video/mp4' />
 //        </video> ;

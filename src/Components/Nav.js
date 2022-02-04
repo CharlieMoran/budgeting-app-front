@@ -9,6 +9,9 @@ class Nav extends Component {
         <Link to="/transactions">
           <h1 className="logo">Banana Budget App</h1>
         </Link>
+        <Link to="/">
+          <h1 className="banana">🍌</h1>
+        </Link>
         <Link to="/new">
           <button className="new">New Transaction</button>
         </Link>

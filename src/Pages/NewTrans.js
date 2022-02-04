@@ -31,7 +31,7 @@ function NewTrans() {
   const handleSubmit = (evt) => {
     console.log("handleSubmit")
     evt.preventDefault();
-    axios.post(URL, transaction).then(() => navigate("/"));
+    axios.post(URL, transaction).then(() => navigate("/transactions"));
   };
 
   return (
