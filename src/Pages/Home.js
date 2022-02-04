@@ -13,9 +13,19 @@ function Home() {
   }, []);
 
   function balance(transactions) {
+    let balance = document.getElementById('balance');
     return transactions.reduce((a, b) => {
-      return a + Number(b.amount);
-    }, 0);
+      let num = a + Number(b.amount);
+      let val = parseInt(num)
+      if (val >= 1000) {
+        balance.style.color = "green";
+    } else if (val > 0){
+        balance.style.color = "grey";
+    } else {
+      balance.style.color = "red";
+    } return a + Number(b.amount)}, 0,
+  )
+    ;
   }
 
   function earnings(transactions) {
@@ -36,12 +46,28 @@ function Home() {
       .reduce((a, b) => {
         return a + Number(b.amount);
       }, 0);
+     
   }
+
+// function color() {
+    // let resultEl = "";
+    // let balance = document.getElementById('balance');
+    // let val = parseInt(balance)
+    // resultEl.innerHTML = val
+    // if (val >= 1000) {
+    //     resultEl.style.color = "green";
+    // } else if (val > 0){
+    //     resultEl.style.color = "grey";
+    // } else {
+    //   resultEl.style.color = "red";
+    // }
+//     return;
+// }
 
   return (
     <div className="Home">
       <div className="balance">
-      <h1>Balance: {balance(transactions)}</h1>
+      <h1 id="balance">Balance: {balance(transactions)}</h1>
       </div>
       <div className="stuff">
       <h3>Earnings: {earnings(transactions)}</h3>

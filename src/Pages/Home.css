@@ -2,36 +2,39 @@
     margin-left: 6%;
     margin-right: 6%;
   }
-  
-  .Home .stuff {
+#balance #balance-amount {
+  font-size: 42px;
+}
+.Home .stuff {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     margin: 0 6% 0 6%;
   }
   
-  .Home .transTable {
+.Home .transTable {
     margin: 0 6% 0 6%;
     text-align: left;
   }
-  a:hover,
-  a:visited,
-  a:active,
-  a {
+a:hover,
+a:visited,
+a:active,
+a {
     text-decoration: none;
   }
   
-  table {
+table {
     border-collapse: collapse;
   }
   
-  td {
+td {
     padding: 12px;
   }
   
-  .sourceTable {
+.sourceTable {
     border-bottom: 2px solid #ff99ee;
     margin-top: 4px;
   }
-  .Home table {
+
+.Home table {
     width: 85%;
   }
