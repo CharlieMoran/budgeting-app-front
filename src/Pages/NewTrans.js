@@ -35,7 +35,7 @@ function NewTrans() {
   };
 
   return (
-    <div className="newTransaction">
+    <div className="newTrans">
       <h1>Add a new item</h1>
       <form onSubmit={handleSubmit}>
         <label for="date">Date</label>
