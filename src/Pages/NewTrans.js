@@ -82,14 +82,14 @@ function NewTrans() {
           <option value="none" selected disabled hidden>
             Select a Category
           </option>
-          <optgroup label="💰Earnings💰">
+          <optgroup label="💰 Earnings 💰">
             <option value="income">Income</option>
             <option value="income">Stock</option>
             <option value="income">Liquidation</option>
             <option value="income">Refund</option>
             <option value="income">Dividends</option>
           </optgroup>
-          <optgroup label="💸Expenses💸">
+          <optgroup label="💸 Expenses 💸">
             <option value="grocery">Grocery Store</option>
             <option value="banana">🍌 Banana 🍌</option>
             <option value="gas">Gas Station</option>
@@ -97,7 +97,7 @@ function NewTrans() {
             <option value="travel">Travel</option>
             <option value="shopping">Online Shopping</option>
           </optgroup>
-          <optgroup label="Other">
+          <optgroup label="🏦 Other 🏦">
             <option value="bills">Bills</option>
             <option value="bills">Civil Forfeiture</option>
             <option value="bills">Asset Aquisition</option>
