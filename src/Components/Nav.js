@@ -7,7 +7,7 @@ class Nav extends Component {
     return (
       <div className="navBar">
         <Link to="/">
-          <h1 className="logo">Budget App</h1>
+          <h1 className="logo">Banana Budget App</h1>
         </Link>
         <Link to="/new">
           <button className="new">New Transaction</button>

@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import TransTable from "../Components/TransTable";
 import "./Home.css";
+// import Banana from "../Components/Video/banana.mp4"
+// import Banana2 from "../Components/Video/banana2.mp4"
 
 function Home() {
   const [transactions, setTrans] = useState([]);
@@ -13,7 +15,7 @@ function Home() {
   }, [URL]);
 
   function balance(transactions) {
-    let balance = document.getElementById('balance');
+    let balance = document.getElementById("balance");
     return transactions.reduce((a, b) => {
       let num = a + Number(b.amount);
       let val = parseInt(num)
@@ -27,6 +29,22 @@ function Home() {
   )
     ;
   }
+
+//   function BananaVideo() {
+//     let x = (Math.floor(Math.random() * 2 === 0))
+//     let find = document.getElementById("Home")
+//     if (video.includes("banana") && x === 1){
+//      return <video className='banana' autoPlay loop>
+//      <source src={Banana} type='video/mp4' />
+//     </video> ;
+//     } else if (video.includes("banana") && x === 2){
+//       return <video className='banana' autoPlay loop>
+//       <source src={Banana2} type='video/mp4' />
+//      </video> ;
+//   } else {
+//     return;
+//   }
+// }
 
   function earnings(transactions) {
     return transactions
@@ -50,7 +68,8 @@ function Home() {
   }
 
   return (
-    <div className="Home">
+    <div className="Home" id="Home">
+      {/* <BananaVideo /> */}
       <div className="balance">
       <h1 id="balance">Balance: ${balance(transactions).toFixed(2)}</h1>
       </div>
