@@ -82,19 +82,28 @@ function NewTrans() {
           <option value="none" selected disabled hidden>
             Select a Category
           </option>
-          <optgroup label="Earnings">
+          <optgroup label="💰Earnings💰">
             <option value="income">Income</option>
+            <option value="income">Stock</option>
+            <option value="income">Liquidation</option>
+            <option value="income">Refund</option>
+            <option value="income">Dividends</option>
           </optgroup>
-          <optgroup label="Expenses">
-            <option value="grocery">Grocery Stores</option>
+          <optgroup label="💸Expenses💸">
+            <option value="grocery">Grocery Store</option>
             <option value="banana">🍌 Banana 🍌</option>
-            <option value="gas">Gas Stations</option>
-            <option value="restaurants">Restaurants</option>
+            <option value="gas">Gas Station</option>
+            <option value="restaurants">Restaurant</option>
             <option value="travel">Travel</option>
             <option value="shopping">Online Shopping</option>
           </optgroup>
           <optgroup label="Other">
             <option value="bills">Bills</option>
+            <option value="bills">Civil Forfeiture</option>
+            <option value="bills">Asset Aquisition</option>
+            <option value="bills">Mortgage</option>
+            <option value="bills">Taxes</option>
+            <option value="bills">Misc</option>
           </optgroup>
         </select>
         <button type="submit">Submit</button>
