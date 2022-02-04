@@ -12,8 +12,8 @@ function EditTrans() {
     axios.get(URL).then((response) => {
       setTransaction(response.data);
     });
-  }, []);
-  
+  }, [URL]);
+  console.log(setTransaction)
   const handleSubmit = (event) => {
     event.preventDefault();
     axios.put(URL, transaction)

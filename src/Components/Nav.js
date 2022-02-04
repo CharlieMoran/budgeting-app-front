@@ -6,7 +6,7 @@ class Nav extends Component {
   render() {
     return (
       <div className="navBar">
-        <Link to="/">
+        <Link to="/transactions">
           <h1 className="logo">Banana Budget App</h1>
         </Link>
         <Link to="/new">

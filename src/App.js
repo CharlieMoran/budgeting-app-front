@@ -5,6 +5,7 @@ import Nav from "./Components/Nav";
 import NewTrans from "./Pages/NewTrans";
 import EditTrans from "./Pages/EditTrans";
 import TransDetails from "./Pages/TransDetails";
+import Transactions from "./Components/Transactions"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Nav />
       <main>
         <Routes>
+          <Route path="/transactions" element={<Transactions />} />
           <Route exact path="/" element={<Home />} />
           <Route path="/new" element={<NewTrans />} />
           <Route path="/transactions/:id" element={<TransDetails />} />
