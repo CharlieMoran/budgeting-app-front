@@ -17,7 +17,7 @@ function TransDetails() {
   }, [URL]);
 
   const handleDelete = () => {
-    axios.delete(URL).then(() => navigate("/"));
+    axios.delete(URL).then(() => navigate("/transactions"));
   };
   return (
     <div className="transDetails">

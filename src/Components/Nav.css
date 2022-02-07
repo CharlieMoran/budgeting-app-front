@@ -1,6 +1,6 @@
 .navBar {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr 4fr;
     background-image: url("https://media.istockphoto.com/vectors/blurred-gradiant-mesh-background-vector-id1126426945?k=20&m=1126426945&s=612x612&w=0&h=fqeV9K-dM8C-uQU-tq2QYlRVCMzLY0zUhTDoeXc7uC4=");
   }
   
@@ -15,7 +15,7 @@
   
   .navBar .new {
     height: 40px;
-    width: 180px;
+    width: 150px;
     background-color: transparent;
     border: 1px solid #9430bb;
     border-radius: 4.20px;
