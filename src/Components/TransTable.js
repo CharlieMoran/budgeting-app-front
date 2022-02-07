@@ -18,6 +18,7 @@ class TransTable extends Component {
           </thead>
           <tbody>
           {this.props.transactions.map((item, index)=> {
+            console.log (`${item.amount}`)
             return (
               <tr key={index}>
                 <td>{item.date}</td>
