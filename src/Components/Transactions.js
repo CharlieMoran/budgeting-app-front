@@ -12,7 +12,7 @@ function Transactions() {
     axios.get(URL).then((response)=> {
       setTrans(response.data);
     });
-  }, [URL]);
+  }, []);
 
 
   function balance(transactions) {
