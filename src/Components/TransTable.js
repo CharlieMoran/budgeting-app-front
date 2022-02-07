@@ -26,7 +26,7 @@ class TransTable extends Component {
                   {item.source}
                 </Link>
                 </td>
-                <td>${item.amount}</td>
+                <td>${parseFloat(item.amount).toFixed(2)}</td>
               </tr>
             );
           })}
