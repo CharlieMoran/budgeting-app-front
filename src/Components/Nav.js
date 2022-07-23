@@ -9,7 +9,7 @@ class Nav extends Component {
         <Link to="/transactions">
           <h1 className="logo">Banana Budget App</h1>
         </Link>
-        <Link to="https://www.youtube.com/watch?v=yModCU1OVHY">
+        <Link to="/">
           <h1 className="banana">🍌</h1>
         </Link>
         <Link to="/new">
