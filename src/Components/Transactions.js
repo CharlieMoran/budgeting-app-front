@@ -14,7 +14,6 @@ function Transactions() {
     });
   }, []);
 
-
   function balance(transactions) {
     let balance = document.getElementById("balance");
     return transactions.reduce((a, b) => {
@@ -51,25 +50,6 @@ function Transactions() {
       }, 0);
      
   }
-
-//   function BananaVideo(transactions) {
-//     console.log(transactions)
-//       let x = (Math.floor(Math.random() * 2))
-//       for(let i = 0; i > this.state.transactions.length; i++){
-//       if (this.state.transactions[i].source === "banana" ){
-//         console.log(this.state.transactions[i].source)
-//        return <video className='banana' autoPlay loop>
-//        <source src={Banana} type='video/mp4' />
-//       </video> ;
-//       } 
-//       else if (this.state.transactions[i] === "banana" ){
-//         return <video className='banana' autoPlay loop>
-//         <source src={Banana2} type='video/mp4' />
-//        </video> ;
-//       } 
-//     }
-//       return <video></video>;
-//   }
 
   return (
     <div className="Home" id="Home">

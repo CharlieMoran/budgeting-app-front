@@ -7,7 +7,6 @@ import EditTrans from "./Pages/EditTrans";
 import TransDetails from "./Pages/TransDetails";
 import Transactions from "./Components/Transactions"
 
-
 function App() {
   return (
     <div className="App">
